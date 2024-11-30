@@ -56,7 +56,7 @@ This notebook focuses on OCR tasks:
 - Adding prompts
 - Enhance working on complicated CV files
 - Allow the user to upload CVs
-- Working on the docker file
+- Working on the docker file
 
 ## Contributors  
 - Mariam Elseedawy
