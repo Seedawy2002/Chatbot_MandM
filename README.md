@@ -53,7 +53,8 @@ This notebook focuses on OCR tasks:
 - Trying more models
 - Fintuning
 - Adding prompts
-- enhance working on complicated CV files
+- Enhance working on complicated CV files
+- Allow the user to upload CVs
 
 - Working on the docker file
 
