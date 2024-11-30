@@ -1,5 +1,5 @@
 # Chatbot
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/3e162716-890f-452b-a7f3-a6ac7010b8fd)
 
 ## Overview  
 This project focuses on creating a robust pipeline for handling textual and document-based data, leveraging state-of-the-art natural language processing (NLP) and OCR technologies. It consists of two primary workflows:
