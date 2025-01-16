@@ -124,4 +124,5 @@ docker run -p 7860:7860 genai-chatbot
 
 ---
 
-## **License** [MIT License](LICENSE)
+## **License** 
+[MIT License](LICENSE)
