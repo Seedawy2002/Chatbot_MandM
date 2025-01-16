@@ -17,10 +17,10 @@ RUN pip install -r requirements.txt || true
 COPY . /app/
 
 # Download the SpaCy model explicitly (if needed)
-RUN python -m spacy download en-core-web-sm || true
+RUN python -m spacy download en-core-web-sm || true
 
 # Expose the application's port
 EXPOSE 7860
 
 # Define the command to run the application
-CMD ["python", "src/app.py"]
+CMD ["python", "src/app.py"]
