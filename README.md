@@ -2,6 +2,11 @@
 
 An AI-powered chatbot designed to streamline talent acquisition by helping identify and shortlist the best candidates for job vacancies. This chatbot leverages cutting-edge language models and intelligent data processing techniques to reduce time and effort while improving the quality of hiring decisions.
 
+![image](https://github.com/user-attachments/assets/1ff5c573-968c-4679-9f80-7e8b74ef5e15)
+
+![image](https://github.com/user-attachments/assets/5d9ec49b-d9df-431e-a1ad-a30ebe282467)
+
+
 ---
 
 ## **Features**
@@ -73,40 +78,65 @@ CHATBOT/
 - pip 23.0.1
 - Docker (for containerized deployment)
 
-### 1. Clone the Repository
-```bash
-git clone <repository-url>
-cd CHATBOT
-```
+To structure your setup guide with three distinct options (local, Docker build, and Docker pull), here is a revised version of the instructions:
 
-### 2. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
+---
 
-### 3. Configure API Keys
-- Set up `PINECONE_API_KEY` and `GROQ_API_KEY` as environment variables for embedding and chatbot functionality.
+### Run the Chatbot: Three Options
 
-### 4. Run Locally
-```bash
-python src/app.py
-```
-The application will launch a local Gradio interface.
+#### Option 1: Run Locally
+1. **Clone the Repository**  
+   ```bash
+   git clone <repository-url>
+   cd CHATBOT
+   ```
 
-## Docker Deployment
-Build and run the Docker container:
-```bash
-docker build -t genai-chatbot .
-docker run -p 7860:7860 genai-chatbot
-```
+2. **Install Dependencies**  
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## **Running**
-- Run the following command to start the service:
-```bash
-docker-compose up -d
-```
+3. **Configure API Keys**  
+   Set up `PINECONE_API_KEY` and `GROQ_API_KEY` as environment variables for embedding and chatbot functionality.
 
-After running either method, open the link [http://localhost:7860](http://localhost:7860) in your browser to access the chatbot.
+4. **Run the Application**  
+   ```bash
+   python src/app.py
+   ```
+   The application will launch a local Gradio interface.
+
+---
+
+#### Option 2: Run via Docker Build
+1. **Build and Run the Docker Container**  
+   ```bash
+   docker build -t genai-chatbot .
+   docker run -p 7860:7860 genai-chatbot
+   ```
+
+2. **Access the Chatbot**  
+   Open [http://localhost:7860](http://localhost:7860) in your browser.
+
+---
+
+#### Option 3: Run via Docker Pull
+1. **Pull the Pre-Built Docker Image**  
+   ```bash
+   docker pull fatmataha/chatbot
+   ```
+
+2. **Run the Container**  
+   ```bash
+   docker run -p 7860:7860 fatmataha/chatbot
+   ```
+
+3. **Access the Chatbot**  
+   Open [http://localhost:7860](http://localhost:7860) in your browser.
+
+---
+
+This layout clearly separates the methods, allowing users to choose the most convenient option. Let me know if you'd like further adjustments!
+
 
 ---
 
