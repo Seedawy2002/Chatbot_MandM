@@ -60,6 +60,7 @@ CHATBOT/
 ├── .env                   # Environment variables for API keys and secrets
 ├── .dockerignore          # Files and directories to exclude from Docker builds
 ├── Dockerfile             # Dockerfile for containerized deployment
+├── docker-compose.yml     # Docker compose file
 ├── requirements.txt       # Python dependencies
 └── README.md              # Project documentation
 ```
@@ -98,6 +99,23 @@ Build and run the Docker container:
 docker build -t genai-chatbot .
 docker run -p 7860:7860 genai-chatbot
 ```
+Here’s the updated content with the additional instruction to use Docker Compose and open the link:
+
+```markdown
+## Docker Deployment
+Build and run the Docker container:
+```bash
+docker build -t genai-chatbot .
+docker run -p 7860:7860 genai-chatbot
+```
+
+## **Running**
+- Run the following command to start the service:
+```bash
+docker-compose up
+```
+
+After running either method, open the link [http://localhost:7860](http://localhost:7860) in your browser to access the chatbot.
 
 ---
 
