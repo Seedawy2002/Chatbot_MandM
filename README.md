@@ -52,7 +52,7 @@ An AI-powered chatbot designed to streamline talent acquisition by helping ident
 ```
 Trials                     # All trials
 CHATBOT/
-├── cvs/                   # Directory containing example resumes
+├── cvs_all/                   # Directory containing example resumes
 ├── src/                   # Source code directory
 │   ├── app.py             # Gradio interface and chatbot logic
 │   ├── file_processor.py  # Processes and embeds resumes
@@ -99,20 +99,11 @@ Build and run the Docker container:
 docker build -t genai-chatbot .
 docker run -p 7860:7860 genai-chatbot
 ```
-Here’s the updated content with the additional instruction to use Docker Compose and open the link:
-
-```markdown
-## Docker Deployment
-Build and run the Docker container:
-```bash
-docker build -t genai-chatbot .
-docker run -p 7860:7860 genai-chatbot
-```
 
 ## **Running**
 - Run the following command to start the service:
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 
 After running either method, open the link [http://localhost:7860](http://localhost:7860) in your browser to access the chatbot.
