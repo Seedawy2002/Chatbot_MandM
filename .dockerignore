@@ -1,0 +1,7 @@
+__pycache__
+*.pyc
+*.pyo
+venvy2
+venvy
+*.log
+*.sqlite3
