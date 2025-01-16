@@ -11,6 +11,8 @@ import spacy
 import pdfplumber
 
 os.environ.get("GROQ_API_KEY", "PINECONE_API_KEY")
+os.environ["GROQ_API_KEY"] =  "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"
+os.environ["PINECONE_API_KEY"] = "pcsk_5WCgdB_QmWFymLpXWR9CFEaXsPggzWS83xBiBiLmDvWX8RMPdcT6G2x6Wa2p9LEQCvX
 
 class FileProcessor:
     def __init__(self, folder_path, index_name="new", embedding_model="BAAI/bge-base-en-v1.5", chunk_size=1000, chunk_overlap=100):
